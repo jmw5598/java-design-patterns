@@ -3,7 +3,6 @@ package designpatterns.buider.optional;
 public class Application {
     
     public static void main(String[] args) {
-                
         System.out.println(
             Address.builder()
                    .street("1234 Marc")
@@ -13,5 +12,4 @@ public class Application {
                    .build()
         );
     }
-    
 }

@@ -1,5 +1,11 @@
 package designpatterns.buider.optional;
 
+
+/**
+ * Builder pattern where all members are optional.
+ * @author Jason White
+ *
+ */
 public class Address {
     
     private String street;
@@ -18,6 +24,24 @@ public class Address {
         return new Builder();
     }
     
+    public String getStreet() {
+        return street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public int getZip() {
+        return zip;
+    }
+
+
+
     public static class Builder {
         
         private String street;
@@ -46,6 +70,7 @@ public class Address {
         }
         
         public Address build() {
+            //Add validation checking before return if needed.
             return new Address(this);
         }
         
