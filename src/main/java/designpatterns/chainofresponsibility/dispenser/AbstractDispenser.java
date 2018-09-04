@@ -2,7 +2,7 @@ package designpatterns.chainofresponsibility.dispenser;
 
 public abstract class AbstractDispenser implements Dispensable {
 	
-	protected Dispensable next;
+	protected final Dispensable next;
 	protected final int BILL_VALUE;
 	
 	public AbstractDispenser(Dispensable next, final int value) {

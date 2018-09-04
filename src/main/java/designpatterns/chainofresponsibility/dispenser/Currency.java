@@ -2,9 +2,9 @@ package designpatterns.chainofresponsibility.dispenser;
 
 public class Currency {
 	
-	private int amount;
+	private final int amount;
 	
-	public Currency(int amount) {
+	public Currency(final int amount) {
 		this.amount = amount;
 	}
 	
